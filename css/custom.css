@@ -1,0 +1,152 @@
+.navbar {
+	margin-bottom: 0;
+}
+body {
+	background: #433E44;
+	color: #f7f7f7;
+	font-family: 'Montserrat', sans-serif;
+    z-index: -1;
+}
+h1,
+h2 {
+	font-weight: bold;
+	text-align: center;
+}
+p {
+	font-size: 16px;
+	color: #cdcdcd;
+	text-align: center;
+	
+}
+
+#particle {
+	background-color: #433E44;
+	position:fixed;
+	top:0;
+	right:0;
+	bottom:0;
+	left:0;
+	z-index:0; 
+  }
+  #overlay {
+	position: relative;
+	width: 50%;
+	height: 400px;
+  }
+
+.btn-primary {
+	color: #fff;
+	background-color: transparent;
+	border-color: white;
+	margin-bottom: 5px;
+}
+.btn-primary:hover {
+	color: #908792;
+	background-color: white;
+	border-color: white;
+}
+
+.navbar-inverse {
+	background: #433E44;
+	border: 0;
+}
+.navbar-inverse .navbar-nav li a {
+	color: #f7f7f7;
+	font-size: 16px;
+}
+.navbar-inverse .navbar-nav li a:hover {
+	background: #908792;
+}
+.dropdown-menu {
+	background: #433E44;
+	border-radius: 0;
+	border: 0;
+}
+.dropdown-menu li a {
+	padding: 10px;
+}
+.navbar-inverse .navbar-nav .dropdown-menu li a:hover {
+	background: #908792;
+}
+.img-rounded{
+	height: 400px;
+	width: 100%;
+}
+*, *::before, *::after{
+	-moz-box-sizing: border-box;
+		 box-sizing: border-box;
+	
+	-webkit-transition: all 0.3s ease-in-out;
+			transition: all 0.3s ease-in-out;
+}
+
+figure{
+	width: 540px;
+	height: 400px;
+	overflow: hidden;
+	position: relative;
+	display: inline-block;
+	vertical-align: top;
+	border: 1px solid #fff;
+	box-shadow: 0 0 5px #ddd;
+	margin: 1em;
+}
+
+figcaption{
+position: absolute;
+left: 0; right: 0;
+top: 0; bottom: 0;
+text-align: center;
+font-weight: bold;
+width: 100%;
+height: 100%;
+display: table;
+}
+
+figcaption div{
+display: table-cell;
+vertical-align: middle;
+position: relative;
+top: 20px;
+opacity: 0;
+color: #2c3e50;
+text-transform: uppercase;
+}
+
+figcaption div:after{
+position: absolute;
+content: "";
+left: 0; right: 0;
+bottom: 40%;
+text-align: center;
+margin: auto;
+width: 0%;
+height: 2px;
+background: #2c3e50;
+}
+
+
+figure img{
+-webkit-transition: all 0.5s linear;
+		transition: all 0.5s linear;
+-webkit-transform: scale3d(1, 1, 1);
+		transform: scale3d(1, 1, 1);
+}
+
+figure:hover figcaption{
+background: rgba(255,255,255,0.3);
+}
+
+figcaption:hover div{
+opacity: 1;
+top: 0;
+}
+
+figcaption:hover div:after{
+width: 50%;
+}
+
+figure:hover img{
+-webkit-transform: scale3d(1.2, 1.2, 1);
+		transform: scale3d(1.2, 1.2, 1);
+}
